@@ -3,9 +3,10 @@ __pycache__/
 *$py.class
 *.so
 
-# Local checkpoints and weights
-/weights/
-*.pth
+# weights/svamitva_refined_v2_e5.pth is committed intentionally so the repo
+# runs out of the box; ignore any other/local checkpoints.
+weights/*.pth
+!weights/svamitva_refined_v2_e5.pth
 *.pt
 *.ckpt
 
